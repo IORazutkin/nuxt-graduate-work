@@ -1,0 +1,25 @@
+$shake-amplitude: 3px;
+
+@keyframes shake {
+  0% {
+    transform: translateX(-$shake-amplitude);
+  }
+  25% {
+    transform: translateX($shake-amplitude);
+  }
+  50% {
+    transform: translateX(-$shake-amplitude);
+  }
+  75% {
+    transform: translateX($shake-amplitude);
+  }
+}
+
+@keyframes load {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
